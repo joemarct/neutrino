@@ -3,17 +3,17 @@
 
 ## Usage
 
-Install the Go dependencies:
+Clone this repository then install the Go dependencies:
 ```bash
 dep ensure
 ```
 
-To get started, clone this repository. Then install the node dependencies:
+Then install the node dependencies:
 ```bash
 cd webapp && npm install
 ```
 
-Then, go back to the base directory and build the app:
+Then go back to the base directory and build the app:
 ```bash
 ./build.sh
 ```
