@@ -6,7 +6,6 @@ import (
 	"strconv"
 
 	"github.com/gobuffalo/packr"
-	"github.com/joemarct/neutrino/backend"
 	"github.com/phayes/freeport"
 	"github.com/zserge/webview"
 )
@@ -24,7 +23,6 @@ func main() {
 	}
 	backendPort := 4564
 	go runWebApp(webappPort)
-	go backend.RunServer(backendPort)
 	webview.Open("Example Application",
 		"http://localhost:"+strconv.Itoa(webappPort), 800, 600, true)
 }
