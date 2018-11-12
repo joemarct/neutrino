@@ -21,7 +21,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	backendPort := 4564
 	go runWebApp(webappPort)
 	webview.Open("Example Application",
 		"http://localhost:"+strconv.Itoa(webappPort), 800, 600, true)
